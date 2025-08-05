@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
-import RESUME from "../assets/RESUME.pdf";
+import RESUME from "../assets/RESUME - FORMENTO.pdf";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 
 function Navbar() {
