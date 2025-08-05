@@ -1,10 +1,11 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import ReactMarkdown from "react-markdown";
 
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="border-b border-neutral-900 pb-4">
+      <div className="border-b border-neutral-900 pb-4 pt-0.5">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
@@ -43,9 +44,9 @@ const Projects = () => {
                 className="w-full max-w-xl lg:w-3/4 lg:ps-25 mb-3"
               >
                 <h6 className="mb-2 font-semibold text-2xl">{project.title}</h6>
-                <p className="mb-4 text-neutral-400 text-xl">
-                  {project.description}
-                </p>
+                <div className="mb-4 text-neutral-400 text-xl">
+                  <ReactMarkdown>{project.description}</ReactMarkdown>
+                </div>
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}

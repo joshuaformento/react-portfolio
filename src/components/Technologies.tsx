@@ -1,5 +1,5 @@
 import { GrReactjs } from "react-icons/gr";
-import { FaHtml5 } from "react-icons/fa6";
+import { FaHtml5, FaVuejs } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaJs } from "react-icons/fa6";
@@ -32,7 +32,7 @@ const iconVariants = (duration: any) => ({
 function Technologies() {
   return (
     <section id="tech">
-      <div className="border-b border-neutral-800 pb-24">
+      <div className="border-b border-neutral-800 pb-24 pt-0.5">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
@@ -174,6 +174,14 @@ function Technologies() {
             className="rounded-2xl border-4 border-neutral-800 p-4"
           >
             <TbBrandVercelFilled className="text-7xl" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaVuejs className="text-7xl text-green-300" />
           </motion.div>
         </motion.div>
       </div>

@@ -14,8 +14,8 @@ const Contact = () => {
           Get in Touch
         </motion.h2>
         <p className="text-center tracking-normal text-2xl mb-10">
-          I'm currently looking for internship opportunities. Feel free to leave
-          any suggestions or feedback!
+          I'm currently seeking full-time employment. Feel free to leave any
+          suggestions or feedback!
         </p>
         <div className="text-center tracking-tighter">
           <motion.p
@@ -38,7 +38,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
-            href="https://mail.google.com/mail/#inbox?compose=new"
+            href={`https://mail.google.com/mail/?view=cm&to=${CONTACT.email}`}
             target="_blank"
             rel="noopener noreferrer"
             className="border-b"
