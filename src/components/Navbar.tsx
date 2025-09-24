@@ -13,7 +13,7 @@ function Navbar() {
         </a>
       </div>
       <div
-        className="m-8 flex-col items-center justify-center gap-4 lg:text-2xl lg:flex-row hidden lg:flex"
+        className="m-8 flex-col items-center justify-center gap-6 lg:text-2xl lg:flex-row hidden lg:flex"
         id="mobile-menu-3"
       >
         <a href="#">Home</a>

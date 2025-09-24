@@ -1,5 +1,5 @@
 import { GrReactjs } from "react-icons/gr";
-import { FaHtml5, FaVuejs } from "react-icons/fa6";
+import { FaGitAlt, FaHtml5, FaPhp, FaVuejs } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaJs } from "react-icons/fa6";
@@ -7,7 +7,7 @@ import { BiLogoJava } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { BiLogoTypescript } from "react-icons/bi";
-import { TbBrandVite } from "react-icons/tb";
+import { TbBrandGithubFilled, TbBrandVite } from "react-icons/tb";
 import { TbBrandNetbeans } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa6";
@@ -182,6 +182,30 @@ function Technologies() {
             className="rounded-2xl border-4 border-neutral-800 p-4"
           >
             <FaVuejs className="text-7xl text-green-300" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaPhp className="text-7xl text-white-100" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <FaGitAlt className="text-7xl text-orange-500" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(5.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <TbBrandGithubFilled className="text-7xl text-white-100" />
           </motion.div>
         </motion.div>
       </div>
