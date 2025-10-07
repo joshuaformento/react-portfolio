@@ -68,6 +68,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
+  name: "Joshua Ashley Formento",
   address: "San Pablo City, Laguna",
   phoneNo: "09493255812",
   email: "joshuaformento.work@gmail.com",

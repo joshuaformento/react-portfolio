@@ -9,15 +9,19 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
-          className="mt-10 mb-5 text-center text-4xl"
+          className="mt-10 mb-7 text-center text-4xl"
         >
           Get in Touch
         </motion.h2>
-        <p className="text-center tracking-normal text-2xl mb-10">
-          I'm currently seeking full-time employment. Feel free to leave any
-          suggestions or feedback!
-        </p>
         <div className="text-center tracking-tighter">
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+            className="my-4"
+          >
+            {CONTACT.name}
+          </motion.p>
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
